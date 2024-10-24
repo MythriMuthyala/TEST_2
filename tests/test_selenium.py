@@ -1,20 +1,20 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-import time
 
-# Initialize Chrome WebDriver
-driver = webdriver.Chrome()  # Ensure ChromeDriver is in your PATH or provide its full path here
+#Set up WebDriver (this example uses Chrome)
+driver = webdriver.Chrome()
 
-# Open a webpage
-driver.get("https://www.example.com")
+# Open Google
+driver.get("https://www.google.com")
 
-# Assert the page title
-assert "Example Domain" in driver.title
+# Find the search box using its name attribute
+search_box = driver.find_element("name", "q")
 
-# Interact with the page (if needed)
-elem = driver.find_element_by_tag_name("h1")  # Find an element, e.g., the h1 tag
-print(elem.text)
+# Type a search query
+search_box.send_keys("Selenium testing in Windows")
 
-# Wait for a few seconds and close the browser
-time.sleep(2)
+# Simulate pressing the Enter key
+search_box.send_keys(Keys.RETURN)
+
+# Close the browser
 driver.quit()
