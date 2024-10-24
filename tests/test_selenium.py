@@ -3,7 +3,6 @@ from selenium.webdriver.common.keys import Keys
 
 #Set up WebDriver (this example uses Chrome)
 driver = webdriver.Chrome()
-
 # Open Google
 driver.get("https://www.google.com")
 
