@@ -41,7 +41,13 @@ Docker Commands:
 8. Execute the Docker commands mentioned above
 9. Visualize the output in the command prompt and in the Docker Desktop app
 
+### Output:
+![Screenshot 2024-10-27 193431](https://github.com/user-attachments/assets/90b68158-f2c7-49ef-b520-827ace204070)
+
+![Screenshot 2024-10-27 193359](https://github.com/user-attachments/assets/54a2b570-8a14-4bc7-97e3-96ca04dd1d6d)
+
 Accuracy achieved: 95% (Random Forest)
+
 
 
 
